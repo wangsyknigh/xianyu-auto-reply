@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: xianyu-auto-reply
+    runtime: docker
+    plan: free
+    dockerfilePath: Dockerfile  # 使用项目原有的Dockerfile
+    envVars:
+      - key: WEB_PORT
+        value: 10000
+      - key: PORT
+        value: 10000
+    disk:
+      name: xianyu-data
+      mountPath: /app/data
+      sizeGB: 1
