@@ -3,7 +3,6 @@ services:
     name: xianyu-auto-reply
     runtime: docker
     plan: free
-    dockerfilePath: Dockerfile  # 使用项目原有的Dockerfile
     envVars:
       - key: WEB_PORT
         value: 10000
